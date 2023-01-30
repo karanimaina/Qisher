@@ -9,7 +9,8 @@ import { NavigationComponent } from './components/navigation/navigation.componen
 import { BlogComponent } from './components/blog/blog.component';
 import { BlogDetailsComponent } from './components/blog-details/blog-details.component';
 import { ServicesComponent } from './components/services/services.component';
-import { TeamComponent } from './team/team.component';
+import { TeamComponent } from './components/team/team.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { TeamComponent } from './team/team.component';
     BlogDetailsComponent,
     ServicesComponent,
     TeamComponent,
+    ContactComponent,
 
   ],
   imports: [
