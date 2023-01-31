@@ -1,0 +1,29 @@
+.client {
+  padding-top: 60px;
+}
+
+.client .swiper-slide img {
+  opacity: 0.5;
+  transition: 0.3s;
+}
+
+.client .swiper-slide img:hover {
+  opacity: 1;
+}
+
+.client .swiper-pagination {
+  margin-top: 20px;
+  position: relative;
+}
+
+.client .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  opacity: 1;
+  border: 1px solid #94c045;
+}
+
+.client .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #94c045;
+}

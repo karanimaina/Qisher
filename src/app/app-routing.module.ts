@@ -7,7 +7,8 @@ import {BlogComponent} from "./components/blog/blog.component";
 import {BlogDetailsComponent} from "./components/blog-details/blog-details.component";
 import {ServicesComponent} from "./components/services/services.component";
 import {TeamComponent} from "./components/team/team.component";
-import {ContactComponent} from "./contact/contact.component";
+import {ContactComponent} from "./components/contact/contact.component";
+import {ValuesComponent} from "./components/values/values.component";
 
 const routes: Routes = [
   {path:'',component:HomeComponent},
@@ -18,7 +19,8 @@ const routes: Routes = [
   {path:'blog-details',component:BlogDetailsComponent},
   {path:'team',component:TeamComponent},
   {path:'services',component:ServicesComponent},
-  {path: 'contact', component:ContactComponent}
+  {path: 'contact', component:ContactComponent},
+  {path:'values',component:ValuesComponent}
 ];
 
 @NgModule({

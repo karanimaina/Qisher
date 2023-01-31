@@ -10,7 +10,8 @@ import { BlogComponent } from './components/blog/blog.component';
 import { BlogDetailsComponent } from './components/blog-details/blog-details.component';
 import { ServicesComponent } from './components/services/services.component';
 import { TeamComponent } from './components/team/team.component';
-import { ContactComponent } from './contact/contact.component';
+import { ContactComponent } from './components/contact/contact.component';
+import { ValuesComponent } from './components/values/values.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { ContactComponent } from './contact/contact.component';
     ServicesComponent,
     TeamComponent,
     ContactComponent,
+    ValuesComponent,
 
   ],
   imports: [
