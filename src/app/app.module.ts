@@ -12,6 +12,7 @@ import { ServicesComponent } from './components/services/services.component';
 import { TeamComponent } from './components/team/team.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { ValuesComponent } from './components/values/values.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { ValuesComponent } from './components/values/values.component';
     TeamComponent,
     ContactComponent,
     ValuesComponent,
+    FooterComponent,
 
   ],
   imports: [

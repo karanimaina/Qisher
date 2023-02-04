@@ -1,15 +1,6 @@
-/**
-* Template Name: Nova - v1.3.0
-* Template URL: https://bootstrapmade.com/nova-bootstrap-business-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
-/*--------------------------------------------------------------
-# Set main reusable colors and fonts using CSS variables
-# Learn more about CSS variables at https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
---------------------------------------------------------------*/
-/* Fonts */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 :root {
   --font-default: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-primary: "Montserrat", sans-serif;
@@ -19,7 +10,7 @@
 /* Colors */
 :root {
   --color-default: #2b180d;
-  --color-primary: #56b8e6;
+  --color-primary: rgb(8, 103, 255);
   --color-secondary: #1b2f45;
   --color-gray: #695959;
   --color-default-rgb: rgba(165, 168, 158, 0.92);
@@ -509,7 +500,7 @@ section {
 .hero {
   width: 100%;
   min-height: 100vh;
-  background: url("src/assets/img/hero-bg.jpg") top center;
+  background: url("src/assets/images/hero-bg.jpg") top center;
   background-size: cover;
   position: relative;
   padding: 120px 0;
@@ -775,7 +766,7 @@ section {
 # Call To Action Section
 --------------------------------------------------------------*/
 .call-to-action {
-  background: linear-gradient(rgba(27, 47, 69, 0.8), rgba(27, 47, 69, 0.8)), url("src/assets/img/cta-bg.jpg") center center;
+  background: linear-gradient(rgba(27, 47, 69, 0.8), rgba(27, 47, 69, 0.8)), url("src/assets/images/cta-bg.jpg") center center;
   background-size: cover;
   padding: 100px 0;
 }
@@ -1095,93 +1086,6 @@ section {
 /*--------------------------------------------------------------
 # Testimonials Section
 --------------------------------------------------------------*/
-.testimonials .testimonial-item {
-  box-sizing: content-box;
-  padding: 30px;
-  margin: 40px 30px;
-  box-shadow: 0px 0 20px rgba(27, 47, 69, 0.1);
-  background: #fff;
-  min-height: 320px;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  transition: 0.3s;
-}
-
-.testimonials .testimonial-item .stars {
-  margin-bottom: 15px;
-}
-
-.testimonials .testimonial-item .stars i {
-  color: #ffc107;
-  margin: 0 1px;
-}
-
-.testimonials .testimonial-item .testimonial-img {
-  width: 90px;
-  border-radius: 50%;
-  border: 4px solid #fff;
-  margin: 0 auto;
-}
-
-.testimonials .testimonial-item h3 {
-  font-size: 18px;
-  font-weight: bold;
-  margin: 10px 0 5px 0;
-  color: #111;
-}
-
-.testimonials .testimonial-item h4 {
-  font-size: 14px;
-  color: #999;
-  margin: 0;
-}
-
-.testimonials .testimonial-item p {
-  font-style: italic;
-  margin: 0 auto 15px auto;
-}
-
-.testimonials .swiper-pagination {
-  margin-top: 20px;
-  position: relative;
-}
-
-.testimonials .swiper-pagination .swiper-pagination-bullet {
-  width: 10px;
-  height: 10px;
-  background-color: #e8eff6;
-  opacity: 1;
-}
-
-.testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: var(--color-primary);
-}
-
-.testimonials .swiper-slide {
-  opacity: 0.3;
-}
-
-@media (max-width: 1199px) {
-  .testimonials .swiper-slide-active {
-    opacity: 1;
-  }
-
-  .testimonials .swiper-pagination {
-    margin-top: 0;
-  }
-
-  .testimonials .testimonial-item {
-    margin: 40px 20px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .testimonials .swiper-slide-next {
-    opacity: 1;
-    transform: scale(1.12);
-  }
-}
 
 /*--------------------------------------------------------------
 # Portfolio Section
@@ -1348,7 +1252,7 @@ section {
 # Contact Section
 --------------------------------------------------------------*/
 .contact {
-  background: url("src/assets/img/contact-bg.png") left top no-repeat;
+  background: url("src/assets/images/contact-bg.png") left top no-repeat;
   background-size: contain;
   position: relative;
 }
@@ -2067,7 +1971,7 @@ section {
 .blog .blog-pagination li.active a,
 .blog .blog-pagination li:hover a {
   background: var(--color-primary);
-  color: #fff;
+  color: #ffffff;
 }
 
 /*--------------------------------------------------------------
@@ -2119,14 +2023,14 @@ section {
   display: inline-block;
   width: 32px;
   height: 32px;
-  color: rgba(27, 47, 69, 0.5);
+  color: bisque;
   margin-right: 10px;
   transition: 0.3s;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: var(--color-primary);
-  color: #fff;
+  color: #ffffff;
   border-radius: 50px;
 }
 
