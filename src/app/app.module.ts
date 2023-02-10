@@ -6,13 +6,17 @@ import { AppComponent } from './app.component';
 import { AboutComponent } from './components/about/about.component';
 import { HomeComponent } from './components/home/home.component';
 import { NavigationComponent } from './components/navigation/navigation.component';
-import { BlogComponent } from './components/blog/blog.component';
-import { BlogDetailsComponent } from './components/blog-details/blog-details.component';
+
 import { ServicesComponent } from './components/services/services.component';
 import { TeamComponent } from './components/team/team.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { ValuesComponent } from './components/values/values.component';
 import { FooterComponent } from './footer/footer.component';
+import { ServiceDetailComponent } from './service-detail/service-detail.component';
+import { MgtComponent } from './serv/mgt/mgt.component';
+import { LeanComponent } from './serv/lean/lean.component';
+import { StrategyComponent } from './serv/strategy/strategy.component';
+import { OperationalComponent } from './serv/operational/operational.component';
 
 @NgModule({
   declarations: [
@@ -20,13 +24,17 @@ import { FooterComponent } from './footer/footer.component';
     AboutComponent,
     HomeComponent,
     NavigationComponent,
-    BlogComponent,
-    BlogDetailsComponent,
+
     ServicesComponent,
     TeamComponent,
     ContactComponent,
     ValuesComponent,
     FooterComponent,
+    ServiceDetailComponent,
+    MgtComponent,
+    LeanComponent,
+    StrategyComponent,
+    OperationalComponent,
 
   ],
   imports: [

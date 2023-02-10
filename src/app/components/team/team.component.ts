@@ -1,5 +1,6 @@
 import {Component, ElementRef, HostListener, ViewChild} from '@angular/core';
 import Swiper from "swiper";
+import {Route, Router} from "@angular/router";
 @Component({
   selector: 'app-team',
   templateUrl: './team.component.html',
@@ -9,7 +10,7 @@ export class TeamComponent {
 
   @ViewChild('pagination') pagination: ElementRef;
 
-  constructor() {
+  constructor(private router:Router) {
   }
   ngAfterViewInit() {
     new Swiper('.slides-1', {
@@ -30,5 +31,14 @@ export class TeamComponent {
         prevEl: '.swiper-button-prev',
       }
     });
+  }
+
+  gotoHome() {
+    this.router.navigate(['/home'])
+
+  }
+
+  navigateToContactUs() {
+    this.router.navigate(['/contact'])
   }
 }

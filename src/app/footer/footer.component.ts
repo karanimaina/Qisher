@@ -22,6 +22,6 @@ export class FooterComponent {
   }
 
   goToServices() {
-    this.route.navigate(['/service'])
+    this.route.navigate(['/services'])
   }
 }

@@ -1,4 +1,5 @@
 import {Component, HostListener, OnInit} from '@angular/core';
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-about',
@@ -6,6 +7,10 @@ import {Component, HostListener, OnInit} from '@angular/core';
   styleUrls: ['./about.component.css']
 })
 export class AboutComponent implements OnInit{
+
+  constructor(private router:Router) {
+  }
+
   addImages() {
     const images: string[] = []
     images.push("assets/clients/friendship.jpg")
@@ -34,4 +39,7 @@ export class AboutComponent implements OnInit{
   }
 
 
+  viewTestimonials() {
+    this.router.navigate(['/team'])
+  }
 }
